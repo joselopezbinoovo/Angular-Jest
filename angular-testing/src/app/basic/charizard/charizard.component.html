@@ -1,0 +1,18 @@
+<!-- <h1>Pokémon</h1>
+<div *ngIf="!charizard; else elseBlock">
+    <h2>Loading...</h2>
+</div>
+
+<ng-template #elseBlock>
+    <h3>{{ charizard?.name | titlecase }}</h3>
+    <img [src]="charizard?.sprites?.front_default" [alt]="charizard?.name">
+</ng-template>
+ -->
+<div class="container justify-content-center" *ngFor="let rick of ricky">
+    <div class="row justify-content-center">
+        <div class="col-4">
+            <h1>{{rick.name}}</h1>
+            <img [src]="rick.image" alt="">
+        </div>
+    </div>
+  </div>
